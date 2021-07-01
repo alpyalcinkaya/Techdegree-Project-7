@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.grid-container{
+    display: grid;
+    margin: 0 auto;
+    grid-template-rows: auto;
+}
+
+header{
+    display: flex;
+    background-color: #7477bf;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 5px;
+    height: 4em;
+
+}
+
+.flex-group{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+
+nav{
+    background-color:#4d4c72;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+}
+
+nav a{
+    width: 45px;
+    height: 45px;
+    margin: 0 20px;
+    fill: #ffffff;
+}
+
+.profile-image{
+    border-radius: 80px; 
+    width: 45px;
+    margin: 10px;
+}
+
+.bell-icon{
+    width: 25px;
+    height: 25px;
+    fill: #ffffff;
+}
+
+h1, h3{
+    font-size: 1em;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h3{
+    margin-right: 5px;
+
+}
