@@ -50,12 +50,66 @@ nav a{
     border-radius: 80px; 
     width: 45px;
     margin: 10px;
+    margin-left: gray;
 }
+
 
 .bell-icon{
     width: 25px;
     height: 25px;
     fill: #ffffff;
+}
+
+.header-main{
+    display: flex;
+    align-items: center;
+}
+
+.tab-gap{
+    background-color: #f7f7f7 ;
+    padding: 2rem;
+    width: 100%;
+    border: 0.5px solid black
+}
+
+.headline{
+    margin: 0 15px;
+}
+
+.alert{
+    display: flex;
+    background-color: #7477bf;
+    justify-content:space-between;
+    margin: 10px 15px;
+    border-radius: 0.5em;
+}
+
+.alert-text{
+    margin-left: 15px; 
+    font-size: 1em;
+}
+
+.alert-close{
+    color: white;
+    margin-right: 15px;
+}
+
+
+.label-headline{
+    color: grey;
+}
+
+/* Traffic section */
+
+.traffic{
+    margin: 0 15px;
+}
+
+.traffic-breakdown{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
 }
 
 h1, h3{
