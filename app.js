@@ -1,5 +1,8 @@
-let ctx = document.getElementById('traffic-chart').getContext('2d');
+let lineChart = document.getElementById('traffic-chart').getContext('2d');
+let barChart = document.getElementById('daily-chart').getContext('2d');
 
+
+// Four Data presets to be used in each traffic breakdown
 
 // Data Preset 1
 
@@ -77,9 +80,41 @@ let chartOptions = {
     }
 };
 
-let trafficChart = new Chart(ctx, {
+// Traffic Chart configuration
+
+let trafficChart = new Chart(lineChart, {
     type: 'line',
     data: dataPreset1,
     options: chartOptions,
     
+});
+
+// Daily Chart Configuration
+
+let dailyChart = new Chart(barChart, {
+    type: 'bar',
+    data: {
+        labels: ['S','M','T','W','T','F','S'],
+        datasets: [{
+            data: [50, 20, 30, 50, 80, 90, 100],
+            backgroundColor: '#7477bf',
+            borderWidth: 1
+        }]
+    },
+    options: { 
+        responsive: true,
+        aspectRatio: 3,
+        scales: {
+            y: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        },
+        plugins: {
+            legend: {
+                display: false
+            }
+        }
+    } 
 });
