@@ -7,6 +7,9 @@
     <title>WebApp Dashboard</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body class="grid-container">
     <header>
@@ -82,9 +85,13 @@
                     <li>Monthly</li>
                 </ul>
             </div>
+            <canvas id="traffic-chart" width="400" height="400"></canvas>
         </section>
 
     </main>
-    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

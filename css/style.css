@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 .grid-container{
@@ -105,18 +106,16 @@ nav a{
     margin-right: 15px;
 }
 
-
 .label-headline{
     color: grey;
 }
 
-/* Main */
+/* Main Section */
 
 main{
     grid-area: main;
     width: 100%;
     display: block;
-
 }
 
 /* Traffic section */
@@ -132,6 +131,7 @@ main{
     padding: 0;
 }
 
+
 h1, h3{
     font-size: 1em;
     font-weight: normal;
@@ -144,5 +144,4 @@ h1{
 
 h3{
     margin-right: 5px;
-
 }
