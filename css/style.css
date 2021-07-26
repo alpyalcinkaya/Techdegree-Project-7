@@ -81,11 +81,12 @@ nav a{
     background-color: #f7f7f7 ;
     padding: 2rem;
     width: 100%;
-    border: 0.5px solid black
+    border: 0.5px solid black;
 }
 
 .headline{
     margin: 0 15px;
+    font-size: 1.2em;
 }
 
 .alert{
@@ -133,15 +134,22 @@ main{
 
 
 h1, h3{
-    font-size: 1em;
+    font-size: .8em;
     font-weight: normal;
     color: #ffffff;
 }
 
 h1{
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 h3{
     margin-right: 5px;
+}
+
+/* Daily Traffic & Mobile Users section*/
+
+#mobile-chart{
+    height: 300px;
+
 }

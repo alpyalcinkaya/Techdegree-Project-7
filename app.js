@@ -1,5 +1,6 @@
-let lineChart = document.getElementById('traffic-chart').getContext('2d');
-let barChart = document.getElementById('daily-chart').getContext('2d');
+let lineChart = document.getElementById('traffic-chart').getContext('2d'); // Traffic Line Chart
+let barChart = document.getElementById('daily-chart').getContext('2d'); // Daily Traffic Bar Chart
+let donutChart = document.getElementById('mobile-chart').getContext('2d') // Mobile Doughnut Chart
 
 
 // Four Data presets to be used in each traffic breakdown
@@ -118,3 +119,32 @@ let dailyChart = new Chart(barChart, {
         }
     } 
 });
+
+let mobileChart = new Chart(donutChart, {
+    type: 'doughnut',
+    data: {
+        labels: ['Phones', 'Desktop', 'Tablet' ],
+        datasets: [{
+            data: [500, 150, 150 ],
+            backgroundColor: [
+                '#51b6c8',
+                '#7477bf',
+                '#81c98f'
+            ],
+            hoverOffset: 4
+        }]
+    },
+    options: { 
+        plugins: {
+            legend: {
+                position: 'right',
+                labels:{
+                    boxWidth: 20,
+                    fontStyle: 'bold'
+                }
+            }
+        }
+    } 
+   
+});
+
