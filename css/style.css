@@ -121,7 +121,7 @@ main{
 
 /* Traffic section */
 
-#section-2, #section-3{
+#section-2, #section-3, #section-4{
     margin: 0 15px;
 }
 
@@ -147,9 +147,16 @@ h3{
     margin-right: 5px;
 }
 
-/* Daily Traffic & Mobile Users section*/
+/* Social Stats Section */
 
-#mobile-chart{
-    height: 300px;
+.cards-container{
+    display: flex;
+    flex-direction: column;
+}
 
+.social-card{
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    justify-content: center;
 }
