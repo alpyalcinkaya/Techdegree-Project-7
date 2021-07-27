@@ -160,3 +160,18 @@ h3{
     background-color: grey;
     justify-content: center;
 }
+
+.social-color{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #7477bf;
+}
+
+.social-icon{
+    fill: #ffffff;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    position: absolute;
+}
