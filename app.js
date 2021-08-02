@@ -120,6 +120,8 @@ let dailyChart = new Chart(barChart, {
     } 
 });
 
+// Mobile Chart Configuration
+
 let mobileChart = new Chart(donutChart, {
     type: 'doughnut',
     data: {
@@ -135,6 +137,7 @@ let mobileChart = new Chart(donutChart, {
         }]
     },
     options: { 
+        aspectRatio: 2,
         plugins: {
             legend: {
                 position: 'right',
