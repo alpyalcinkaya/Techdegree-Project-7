@@ -121,7 +121,11 @@ main{
 
 /* Traffic section */
 
-#section-2, #section-3, #section-4, #section-5{
+#section-2, 
+#section-3, 
+#section-4, 
+#section-5,
+#section-6{
     margin: 0 15px;
 }
 
@@ -202,3 +206,27 @@ h3{
     color: #777777;
 }
 
+/* Member Section */
+
+.member-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.member-image{
+    border-radius: 80px;
+    width: 100px;
+    height: 100px;
+}
+
+.member-card > h4 {
+    margin: 5px 0;
+    text-align: center;
+
+}
+
+.member-card > a {
+    color: #7477bf;
+}
