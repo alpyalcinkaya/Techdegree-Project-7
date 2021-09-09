@@ -104,7 +104,7 @@ let dailyChart = new Chart(barChart, {
     },
     options: { 
         responsive: true,
-        aspectRatio: 3,
+        aspectRatio: 2,
         scales: {
             y: [{
                 ticks: {

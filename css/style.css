@@ -434,6 +434,7 @@ textarea::placeholder{
 
     #section-3{
         grid-area: section-3;
+        border-right: 1px solid lightgray;
     }
 
     #section-4{
@@ -460,6 +461,13 @@ textarea::placeholder{
         grid-area: section-9;
     }
 
+    .graphs{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        grid-template-areas: "section-3 section-4";
+        grid-area: graphs;
+    }
+
     main {
         width: auto;
         display: grid;
@@ -467,13 +475,21 @@ textarea::placeholder{
         grid-template-areas:
             "section-1"
             "section-2"
-            "section-3"
-            "section-4"
+            "graphs"
             "section-5"
             "section-6"
             "section-7"
             "section-8"
             "section-9";
+    }
+
+    .cards-container{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .social-card{
+        width: 30%
     }
 
     .member-card {
