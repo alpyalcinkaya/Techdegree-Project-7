@@ -270,12 +270,12 @@ textarea::placeholder{
 
 #message-send{
     width: 95%;
-    height: 30px;
+    height: 50px;
     background-color: #7477bf;
     color: white;
     text-decoration: none;
     border: 1px solid lightgray;
-    border-radius: 2%;
+    border-radius: 5px;
 }
 
 
@@ -295,7 +295,7 @@ textarea::placeholder{
 }
 
 
-.settings-container{
+.switch-container{
     display: flex;
     justify-content: flex-start;
 }
@@ -385,7 +385,7 @@ textarea::placeholder{
   #save-button{
       background-color: #7477bf;
       color: white;
-      border: none;
+      border: 1px solid lightgray;
       border-radius: 5px;
       width: 90%;
       height: 50px;
@@ -395,7 +395,7 @@ textarea::placeholder{
   #cancel-button{
     background-color: lightgray;
     color: white;
-    border: none;
+    border: 1px solid lightgray;
     border-radius: 5px;
     width: 90%;
    height: 50px;
@@ -522,29 +522,67 @@ textarea::placeholder{
         flex-direction: column;
         align-items: flex-start;
         width: 30%;
-        margin-right: 50%;
+    }
+
+    .member-activity{
+        width: 100%;
     }
 
   .member-activity h4{
       text-align: left;
-      width: 30em;
+      width: auto;
   }
 
+  .member-card > h4{
+      margin-left: auto;
+  }
 
+}
 
+@media (min-width: 1024px) {
 
+    .members{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        grid-template-areas: "section-6 section-7";
+        grid-area: members;
+    }
 
+    .message-settings{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        grid-template-areas: "section-8 section-9";
+        grid-area: message-settings;
+    }
 
+    main {
+        width: auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+            "section-1"
+            "section-2"
+            "graphs"
+            "section-5"
+            "members"
+            "message-settings";
+    }
 
+    #section-6{
+        border-right: 1px solid lightgray;
+    }
 
+    #section-8{
+        border-right: 1px solid lightgray;
+    }
 
+    .settings-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 33px;
+    }
 
-
-
-
-
-
-
-
+   
 
 }
