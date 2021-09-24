@@ -50,11 +50,24 @@ header{
     width: 25px;
     height: 25px;
     fill: #ffffff;
+    transition: .3s ease;
+}
+
+.bell-icon:hover{
+    transform: rotate(30deg);
 }
 
 .header-main{
     display: flex;
     align-items: center;
+}
+
+header span{
+    color: chartreuse;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 39px;
+    left: 20px;
 }
 
 

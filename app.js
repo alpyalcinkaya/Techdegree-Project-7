@@ -1,6 +1,20 @@
 let lineChart = document.getElementById('traffic-chart').getContext('2d'); // Traffic Line Chart
 let barChart = document.getElementById('daily-chart').getContext('2d'); // Daily Traffic Bar Chart
-let donutChart = document.getElementById('mobile-chart').getContext('2d') // Mobile Doughnut Chart
+let donutChart = document.getElementById('mobile-chart').getContext('2d'); // Mobile Doughnut Chart
+const alertLabel = document.querySelector('.alert');
+
+
+
+//Alert Label Behavior
+
+
+let closeButton = document.querySelector('.alert-close');
+
+closeButton.addEventListener('click', (e) => {
+    alertLabel.style.display = 'none';
+});
+
+
 
 
 // Four Data presets to be used in each traffic breakdown
