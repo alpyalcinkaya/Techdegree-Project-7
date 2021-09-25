@@ -96,6 +96,7 @@ nav a{
     padding: 2rem;
     width: 100%;
     border: 0.5px solid black;
+    border-top: 0px;
 }
 
 .headline{
@@ -153,6 +154,17 @@ main{
     display: flex;
     justify-content: space-evenly;
     padding: 0;
+}
+
+.traffic-breakdown li{
+    padding: 5px;
+    margin: 0;
+}
+
+.traffic-breakdown li:hover{
+    color: #ffffff;
+    background-color: #7477bf;
+    border-radius: 5px;
 }
 
 
