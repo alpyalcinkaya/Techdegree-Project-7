@@ -15,8 +15,6 @@ closeButton.addEventListener('click', (e) => {
 });
 
 
-
-
 // Four Data presets to be used in each traffic breakdown
 
 // Data Preset 1
@@ -97,11 +95,42 @@ let chartOptions = {
 
 // Traffic Chart configuration
 
+
 let trafficChart = new Chart(lineChart, {
     type: 'line',
     data: dataPreset1,
     options: chartOptions,
     
+});
+
+
+// Traffic Breakdown behavior
+
+let trafficNav = document.getElementsByClassName('traffic-breakdown')[0];
+trafficNav.addEventListener('click', e => {
+trafficChart.destroy();
+    if(e.target.tagName === 'LI'){
+        let breakDown = e.target.textContent;
+        chartData = 0;
+        if(breakDown === 'Hourly') {
+            chartData = dataPreset1;
+        }
+        if(breakDown === 'Daily') {
+            chartData = dataPreset2;
+        }
+        if(breakDown === 'Weekly') {
+            chartData = dataPreset3;
+        }
+        if(breakDown === 'Monthly') {
+            chartData = dataPreset4;
+        }
+    }
+
+    trafficChart = new Chart(lineChart, {
+        type: 'line',
+        data: chartData,
+        options: chartOptions
+    });
 });
 
 // Daily Chart Configuration
