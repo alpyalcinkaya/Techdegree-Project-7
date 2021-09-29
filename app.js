@@ -194,3 +194,23 @@ let mobileChart = new Chart(donutChart, {
    
 });
 
+
+// Message User alerts
+
+const sendButton = document.getElementById('message-send');
+const userName = document.getElementById('user-input');
+const messageContent = document.getElementById('message-content');
+
+sendButton.addEventListener('click', () => {
+    if(userName.value === "" && messageContent.value === "") 
+    {
+        alert("Please enter the values for both User and Message fields")
+    } else if(userName.value === ""){
+        alert("Please enter a value for the User field")
+    } else if(messageContent.value === "") {
+        alert("Please enter a value for the Message field")
+    } else{
+        alert("Message sent!")
+    }
+
+});
